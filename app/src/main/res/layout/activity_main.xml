@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8C4C4"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Simulador de Creditos"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/textViewPrestamo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/textViewPrestamo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prestamo ($)"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/textPrestamo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/textPrestamo"
+            android:layout_width="213dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@id/textViewInteres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewPrestamo" />
+
+        <TextView
+            android:id="@+id/textViewInteres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interes (%)"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/textInteres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textPrestamo"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/textInteres"
+            android:layout_width="211dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@id/textViewAmortizacion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewInteres" />
+
+        <TextView
+            android:id="@+id/textViewAmortizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amortizacion (Años)"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/textAmortizacion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textInteres"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/textAmortizacion"
+            android:layout_width="213dp"
+            android:layout_height="57dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAmortizacion" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            app:layout_constraintBottom_toTopOf="@id/textViewResultado"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textAmortizacion" />
+
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="Resultado:"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
