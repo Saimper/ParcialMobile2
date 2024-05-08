@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-smallcaps"
             android:text="Simulador de Creditos"
-            android:textSize="20sp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@id/textViewPrestamo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -28,10 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Prestamo ($)"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/textPrestamo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.005"
+            app:layout_constraintHorizontal_bias="0.215"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewTitle"
             app:layout_constraintVertical_bias="0.1" />
@@ -44,19 +44,19 @@
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toTopOf="@id/textViewInteres"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.247"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewPrestamo" />
 
         <TextView
             android:id="@+id/textViewInteres"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="102dp"
+            android:layout_height="26dp"
             android:text="Interes (%)"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/textInteres"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintHorizontal_bias="0.218"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textPrestamo"
             app:layout_constraintVertical_bias="0.1" />
@@ -69,7 +69,7 @@
             android:inputType="numberDecimal"
             app:layout_constraintBottom_toTopOf="@id/textViewAmortizacion"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintHorizontal_bias="0.251"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewInteres" />
 
@@ -78,10 +78,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Amortizacion (Años)"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@id/textAmortizacion"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintHorizontal_bias="0.24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textInteres"
             app:layout_constraintVertical_bias="0.1" />
@@ -94,7 +94,7 @@
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@id/button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.28"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textViewAmortizacion" />
 
